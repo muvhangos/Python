@@ -1,0 +1,2 @@
+mesage = "!"
+print(mesage)
