@@ -1,0 +1,7 @@
+cars = ['bmw', 'audi', 'toyota', 'subaru']
+1 print("Here is the original list:")
+print(cars)
+2 print("\nHere is the sorted list:")
+print(sorted(cars))
+3 print("\nHere is the original list again:")
+print(cars
