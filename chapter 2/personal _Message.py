@@ -1,2 +1,0 @@
-mesage = "!"
-print(mesage)
