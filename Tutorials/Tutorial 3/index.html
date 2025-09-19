@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Greeting App</title>
+  <link rel="stylesheet" href="{% static 'greetingapp/style.css' %}">
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to the Greeting App!</h1>
+    <div class="designer">Designed by Samuel Muvhango</div>
+    <input type="text" id="user1" placeholder="Enter name of User 1" />
+    <input type="text" id="user2" placeholder="Enter name of User 2" />
+    <button id="startBtn">💬 Start Conversation</button>
+    <button id="closeBtn">❌ Close Conversation</button>
+    <div id="conversation">
+      <p id="output"></p>
+    </div>
+    <audio autoplay loop>
+      <source src="{% static 'greetingapp/music.mp3' %}" type="audio/mpeg">
+    </audio>
+  </div>
+  <script src="{% static 'greetingapp/script.js' %}"></script>
+</body>
+</html>
