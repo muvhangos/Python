@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+    <title>{% block title %}Simple CRUD App{% endblock %}</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1 { color: #333; }
+        nav { margin-bottom: 20px; }
+        nav a { margin-right: 15px; text-decoration: none; color: #007BFF; }
+        nav a:hover { text-decoration: underline; }
+        footer { margin-top: 30px; font-size: 0.9em; color: #666; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My CRUD App</h1>
+        <nav>
+            <a href="{{ url_for('index') }}">Home</a>
+            <a href="{{ url_for('create') }}">Add Item</a>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+ <footer>
+        <hr>
+        <p>&copy; 2025 My Web App</p>
+    </footer>
+</body>
+</html>
